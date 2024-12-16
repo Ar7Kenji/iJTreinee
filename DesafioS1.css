@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: hsl(36, 100%, 99%);
+    color: hsl(236, 13%, 42%);
+    box-sizing: border-box;
+    border: 100px solid hsl(36, 100%, 99%);
+}
+
+header {
+    position: fixed;
+    overflow: hidden;
+    width: calc(100% - 220px);
+    margin: 0;
+    top: 0;
+    left: 110;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: hsl(36, 100%, 99%);
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    flex-shrink: 1;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+main.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 150px 40px;
+}
+
+
+.NoticiaPrincipal {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.NoticiaImagem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.NoticiaImagem img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ConteudoPrincipal {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.ConteudoPrincipal h1 {
+    flex: 1;
+    font-size: 4rem;
+    font-weight: 800;
+    color: hsl(240, 100%, 5%);
+    margin: 0;
+}
+
+.ConteudoPrincipal .TextoEBotao{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.TextoEBotao p {
+    font-size: 1.7rem;
+    color: hsl(236, 13%, 42%);
+    margin: 0;
+}
+
+.TextoEBotao button {
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(240, 100%, 5%);
+    border: none;
+    padding: 25px 20px;
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.TextoEBotao button:hover {
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(233, 8%, 79%);
+}
+
+aside {
+    flex: 1.5;
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(233, 8%, 79%);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+}
+
+aside ul li {
+    border-bottom: 1.5px solid hsl(233, 8%, 79%);
+    padding: 17px 0px;
+}
+
+aside ul li:last-child {
+    border-bottom: none;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: hsl(36, 100%, 99%);
+    font-size: 1.7rem;
+    font-weight: 700;
+    display: block;
+}
+
+aside ul li a:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+aside ul li p {
+    color: hsl(236, 13%, 42%);
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.OutrasNoticiasRelevantes {
+    flex-basis: 100%;
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.Noticia {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: stretch;
+    gap: 5px;
+    padding: 20px;
+}
+
+.Noticia img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+.NoticiaConteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+}
+
+.NoticiaConteudo span {
+    font-size: 3rem;
+    font-weight: 800;
+    color: hsl(5, 85%, 63%);
+}
+
+.NoticiaConteudo h3 a {
+    flex: 1;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: hsl(240, 100%, 5%);
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.NoticiaConteudo h3 a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.NoticiaConteudo p {
+    font-size: 1.4rem;
+    color: hsl(236, 13%, 42%);
+}
